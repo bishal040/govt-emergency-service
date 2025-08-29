@@ -28,7 +28,7 @@ callBtn.forEach(btn =>
     const now = new Date();
     const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
     const newHistory = document.createElement("div");
-    newHistory.classList.add("flex", "justify-between", "items-center", "px-6", "py-6", "text-black", "rounded-lg", "border-2" , "mb-2" , "bg-gray-100",);
+    newHistory.classList.add("flex", "justify-between", "items-center", "px-6", "py-6", "text-black", "rounded-2xl", "border-2" , "mb-2" , "bg-gray-100",);
     newHistory.innerHTML = `
       <div class="flex flex-col">
         <span class="font-bold">${serviceName}</span>
