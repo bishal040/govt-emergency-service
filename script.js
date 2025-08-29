@@ -1,10 +1,8 @@
-// Increase heart count
 document.querySelectorAll(".heartClick").forEach(btn =>
   btn.addEventListener("click", function(){
     const heartBtn = document.getElementById("heartCount").innerText++;
   })
 );
-// Copy number buttons
 document.querySelectorAll(".copy-btn").forEach(btn =>
   btn.addEventListener("click", async () => {
     const text = btn.closest(".card").querySelector(".service-number").innerText;
@@ -16,7 +14,6 @@ document.querySelectorAll(".copy-btn").forEach(btn =>
     alert("The number " + text + " has been copied to your clipboard");
   })
 );
-//call button
 const callBtn = document.querySelectorAll(".call-btn");
 const historyContainer = document.getElementById("history-container");
 let coin = document.getElementById("call-coin").innerText;
