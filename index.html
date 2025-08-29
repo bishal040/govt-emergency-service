@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- Heroicons Outline + Solid via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/hero-icon-js/hero-icon-outline.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hero-icon-js/hero-icon-solid.js"></script>
+  <title>Emergency Service Directory</title>
+</head>
+<body class="bg-white">
+  <div class="w-full h-[90px] bg-white flex justify-between">
+    <div class="flex items-center space-between">
+      
+      <img src="assets/logo.png" alt="" class="w-30 h-20 mr-4 ml-5 mt-2">
+      <p class="font-bold text-[#006747] text-3xl">Emergency <br> Service</p>
+    </div>
+    <div class="flex gap-2 mr-4  items-center">
+    <div class=" flex items-center gap-2 px-8 py-2 rounded-3xl bg-[#41FF6B1A] text-black font-semibold">
+      <span id="heartCount">0</span><img src="assets/heart.png" alt="icon" class="w-5 h-5">
+    </div>
+    <div class=" flex items-center gap-2 px-8 py-2 rounded-3xl bg-[#41FF6B1A] text-black font-semibold">
+      <span id="call-coin">100</span><img src="assets/coin.png" alt="icon" class="w-5 h-5">
+    </div>
+    <div class=" flex items-center gap-2 px-8 py-2 rounded-3xl text-white bg-[#00A63E] font-semibold">
+      <span id="copy-count">0</span>
+      copy
+    </div>
+    </div>
+  </div>
+  <div class="text-center py-6 px-10 flex flex-col items-center w-full h-[200px] bg-[#006747]">
+    <img src="assets/logo-dark.png" alt="" class="w-30 h-20 mr-4 ml-5 mt-2">
+    <h1 class="text-3xl font-bold text-white mt-2 mb-2">Emergency Service Directory</h1>
+    <p class="text-sm text-white">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+  </div>
+  <div class="min-h-screen bg-[#41FF6B1A]">
+    <div class="flex mt-1 mb-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 flex-1 w-3/4">
+    <!-- Card 1 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="card w-100 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+    <div class="card-body flex flex-col">
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center gap-2 justify-between">
+          <div class="border-2 border bg-[#FFE3E2] rounded-xl p-2">
+            <img src="assets/emergency.png" alt="" class="w-10 h-10">
+          </div>
+          <button class="text-gray-400 text-xl heartClick"><hero-icon-outline name="heart" width="24" height="24" class="text-gray-600"></hero-icon-outline></button>
+        </div>
+        <div class="text-black">
+          <h2 class="card-title text-lg font-bold service-name">National Emergency Number</h2>
+          <p class=" text-sm text-gray-400">National Emergency</p>
+        </div>
+      </div>
+      <div class="mt-4 ">
+        <p class="text-3xl text-black service-number">999</p>
+        <span class="badge badge-outline bg-gray-100 px-4 py-4">All</span>
+      </div>
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn btn-outline w-1/2 text-gray-600 font-light copy-btn"><hero-icon-outline name="document-duplicate" width="18" height="18" class="text-gray-600"></hero-icon-outline>Copy</button>
+        <button class="btn btn-success w-1/2 text-white call-btn"><hero-icon-outline name="phone" width="18" height="18" class="text-white"></hero-icon-outline>Call</button>
+      </div>
+    </div>
+      </div>
+    </div>
+    <!-- Card 10 -->
+      <div class="card w-full sm:w-1/2 lg:w-1/4 lg:col-span-1 ml-1 mt-1 mb-1 mr-1 bg-white shadow-xl border">
+  <div class="flex justify-between items-center px-5 py-5 ">
+    <div class="flex items-center gap-2">
+      <span class="text-gray-400 text-xl">
+        <hero-icon-outline name="clock" width="24" height="24" class="text-gray-600"></hero-icon-outline>
+      </span>
+      <p class="text-black font-medium">Call History</p>
+    </div>
+    <div>
+      <button class="btn btn-primary flex items-center gap-2 px-6 rounded-3xl text-white bg-[#00A63E] " id="history-clear-button">
+        Clear
+      </button>
+    </div>
+  </div>
+  <div class="card-body bg-white-100  rounded-lg mt-2 mb-2" id="history-container">
+    
+    <!-- <div class="flex justify-between items-center px-5 py-5 text-black rounded-lg">
+      <div class="flex flex-col">
+        <span>Fire Service Number</span>
+        <span class="font-bold">999</span>
+      </div>
+      <div>
+        <p class="text-sm text-gray-600">11:00:00 AM</p>
+      </div>
+    </div> -->
+  </div>
+     </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
